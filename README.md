@@ -2,8 +2,6 @@
 ![Build Status](https://github.com/crux-bphc/CMS-Android/workflows/Build/badge.svg?branch=development)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<a href ="https://play.google.com/store/apps/details?id=crux.bphc.cms" target="_blank"><img src="google_play_badge.svg" alt="Get it on Google Play!" height="80"/></a>
-
 This is the Android version of the CMS BPHC app. The app uses standard Moodle endpoints from the server hosted at the [CMS website](https://td.bits-hyderabad.ac.in/moodle/).
 
 ## Features
