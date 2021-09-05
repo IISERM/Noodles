@@ -47,12 +47,12 @@ class MoreFragment : Fragment() {
             startActivity(sendIntent)
         }
 
-        issue_card.setOnClickListener {
+        /*issue_card.setOnClickListener {
             Utils.openURLInBrowser(requireActivity(), Urls.getFeedbackURL(
                 UserAccount.firstName,
                 UserAccount.username
             ))
-        }
+        }*/
 
         about_card.setOnClickListener {
             pushView(InfoFragment(), "info")
