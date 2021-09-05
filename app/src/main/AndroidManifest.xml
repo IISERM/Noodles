@@ -12,7 +12,7 @@
     <application
         android:name="crux.bphc.cms.app.MyApplication"
         android:allowBackup="false"
-        android:icon="@mipmap/ic_blue_launcher_app_icon"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
@@ -61,7 +61,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
 
                 <data
-                    android:host="cms.bits-hyderabad.ac.in"
+                    android:host="web.iisermohali.ac.in"
                     android:pathPrefix="/fileShare"
                     android:scheme="https" />
             </intent-filter>

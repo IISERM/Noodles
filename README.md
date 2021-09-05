@@ -1,5 +1,11 @@
+# Noodles the Moodle Client for IISER Mohali
+
+This is a modified version of the BPHC Moodle client so that it supports IISER M's moodle server. All the hard work is thiers. Please do thank them if you can!
+
+What follows below is the original README
+
 # CMS-Android
-![Build Status](https://github.com/crux-bphc/CMS-Android/workflows/Build/badge.svg?branch=development)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This is the Android version of the CMS BPHC app. The app uses standard Moodle endpoints from the server hosted at the [CMS website](https://td.bits-hyderabad.ac.in/moodle/).
