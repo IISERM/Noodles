@@ -20,7 +20,7 @@ object Urls {
     val MOODLE_URL: Uri = with(Uri.Builder()) {
         scheme("https")
         authority("web.iisermohali.ac.in")
-        path("moodle")
+        path("moodle/")
         build()
     }
 
@@ -28,7 +28,7 @@ object Urls {
 
     @JvmField
     val SSO_LOGIN_URL: Uri = with(MOODLE_URL.buildUpon()) {
-        path("admin/tool/mobile/launch.php")
+        path("moodle/admin/tool/mobile/launch.php")
         appendQueryParameter("service", "moodle_mobile_app")
         appendQueryParameter("oauthsso", "1")
         appendQueryParameter("passport", "")
@@ -38,7 +38,7 @@ object Urls {
 
     @JvmField
     val COURSE_URL: Uri = with(MOODLE_URL.buildUpon()) {
-        path("course/view.php")
+        path("moodle/course/view.php")
         appendQueryParameter("id", "")
         build()
     }
@@ -48,16 +48,6 @@ object Urls {
             .appendOrSetQueryParameter("id", courseId.toString())
             .fragment("section-$sectionNum")
             .build()
-
-    @JvmStatic
-    fun getFeedbackURL(username: String, id: String): String = with(Uri.Builder()) {
-        scheme("https")
-        authority("docs.google.com")
-        path("forms/d/e/1FAIpQLScEGd0DLv7qCkZZHmpkPgDxSW_SomUi83YPSVV5g7dPjELyKQ/viewform")
-        appendQueryParameter("entry.1072406768", username)
-        appendQueryParameter("entry.309049076", "$id@hyderabad.bits-pilani.ac.in")
-        build()
-    }.toString()
 
     fun getProfilePicUrl(urlString: String): Uri {
         val url = Uri.parse(urlString)
@@ -77,7 +67,7 @@ object Urls {
 
     fun isCourseSectionUrl(url: Uri): Boolean {
         if (!isMoodleUrl(url)) return false;
-        return url.path ?: "" == "/course/view.php";
+        return url.path ?: "" == "moodle/course/view.php";
     }
 
     fun isCourseModuleUrl(url: Uri): Boolean {

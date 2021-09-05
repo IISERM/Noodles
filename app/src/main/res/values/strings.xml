@@ -1,6 +1,6 @@
 <resources>
     <!-- General Strings, used in more than one place -->
-    <string name="app_name">CMS BPHC</string>
+    <string name="app_name">Noodles</string>
     <string name="powered_by_crux">Powered by Crux</string>
     <string name="please_login_to_continue">Please login to continue.</string>
     <string name="no_cached_data">No cached data. Check connection and refresh</string>
@@ -53,7 +53,10 @@
     <string name="course_enrol_confirmation_msg">Are you sure you want to enrol yourself in this course?</string>
 
     <!-- App Info -->
-    <string name="app_info"><![CDATA[This companion app for Moodle (CMS) is open source. It provides live notifications
+    <string name="app_info"><![CDATA[
+        This is a modified version of the BPHC Moodle Client to support IISER Mohali Moodle instead.
+        All the hard work is theirs.<br />
+        This companion app for Moodle (CMS) is open source. It provides live notifications
         on course content addition and also many essential features.<br /><br />You can use the
         <a href="https://github.com/crux-bphc/CMS-Android/issues">issues</a> tab on
         <a href="https://github.com/crux-bphc/CMS-Android">GitHub</a> to submit ideas for new features or report any
@@ -94,8 +97,8 @@
     <string name="downloading_file">\"Downloading file - \"</string>
     <string name="invalid_course_id">Invalid course id!</string>
     <string name="cms">CMS</string>
-    <string name="title_bphc">BITS Pilani, Hyderabad Campus</string>
-    <string name="sign_in_prompt">Sign in with your BITS email</string>
+    <string name="title_bphc">IISER Mohali</string>
+    <string name="sign_in_prompt">Sign in with your IISERM email</string>
     <string name="mark_as_read">Mark as read</string>
     <string name="download_course_contents">Download course contents</string>
     <string name="file_description">%1$s, %2$s, %3$s</string>
